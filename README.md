@@ -34,3 +34,12 @@ Conteúdo de Fundamentos para Criar uma Base Sólida sobre a Engenharia de Dados
 *aprenda o princípio dos conceitos e tecnologias base de big data & analytics*  
 
 https://www.loom.com/share/5425aecc76754a378ab4438b49826d84
+
+2) **Instalação do Apache Spark**  
+*aprenda a realizar a instalação do apache spark no macos*  
+
+https://www.loom.com/share/5425aecc76754a378ab4438b49826d84
+
+* [Apache Spark & Linux](https://sparkbyexamples.com/spark/spark-installation-on-linux-ubuntu/)
+* [Apache Spark & Windows](https://phoenixnap.com/kb/install-spark-on-windows-10)
+* 

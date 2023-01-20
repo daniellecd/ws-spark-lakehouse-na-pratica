@@ -43,8 +43,15 @@ https://www.loom.com/share/5f1d05dc293e49919b66d6132da290ff
 * [Apache Spark & Linux](https://sparkbyexamples.com/spark/spark-installation-on-linux-ubuntu/)
 * [Apache Spark & Windows](https://phoenixnap.com/kb/install-spark-on-windows-10)
 
-3) **Aprenda o Spark Shell para Execução de Aplicações no Apache Spark**  
+3) **Aprenda o Spark Submit para Execução de Aplicações no Apache Spark**  
 *aprenda a melhor forma de executar aplicações escritas no apache spark com spark-shell*  
 
-https://www.loom.com/share/9a95dc0ca5b3432984824c5e33e62382
+https://www.loom.com/share/ebcf477568e3415daab8b55ced3b8996
 
+4) **IDE {Integrated Development Environment} para o Apache Spark**  
+*escolha entre as mais famosas e utilizadas do mercado, pycharm ou visual studio code*  
+
+https://www.loom.com/share/803294fe0210486cac6f4bc284a18c9e
+
+* [PyCharm Community Edition](https://www.jetbrains.com/pycharm/download/)
+* [Visual Studio Code](https://code.visualstudio.com/)

@@ -27,7 +27,10 @@ Delta e Iceberg na Prática com Apache Spark.
  </a>
 </p>
 
-[![Fundamentos de Apache Hadoop](https://i.imgur.com/vKb2F1B.png)](https://www.loom.com/share/5425aecc76754a378ab4438b49826d84)
+### Inicie Sua Jornada com Apache Spark
+Vídeos com Conteúdo de Fundamentos para Criar uma Base Sólida sobre a Engenharia de Dados.
+
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.loom.com/share/5425aecc76754a378ab4438b49826d84)
 
 ```shell
 pip install virtualenv

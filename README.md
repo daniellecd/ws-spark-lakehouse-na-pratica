@@ -12,11 +12,13 @@
 
 </div>
 
+### Descrição
 Aprenda a Construir um Data Lakehouse com as Melhores Práticas
 do Mercado de Dados utilizando o Apache Spark como Engine
 de Processamento e Entenda como as Engines de Lakehouse Funcionam.
 
-
+### Roadmap e Programação
+### 
 <p align="center">
   <a href="" rel="noopener">
     <img src="https://github.com/owshq-academy/ws-spark-lakehouse-na-pratica/blob/32d3324e302a6977f70fc1ba90b86634e8cfd524/images/roadmap.excalidraw.png" alt="Project Logo">

@@ -18,7 +18,7 @@ de Processamento e Entenda como as Engines de Lakehouse Funcionam.
 
 <p align="center">
   <a href="" rel="noopener">
-    <img src="https://github.com/owshq-academy/ws-spark-lakehouse-na-pratica /blob/main/image/roadmap.exalidraw.png" alt="Project Logo">
+    <img src="https://github.com/owshq-academy/ws-spark-lakehouse-na-pratica/blob/main/image/roadmap.exalidraw.png" alt="Project Logo">
  </a>
 </p>
 

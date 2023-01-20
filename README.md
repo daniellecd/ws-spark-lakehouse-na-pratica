@@ -27,22 +27,8 @@ Delta e Iceberg na Prática com Apache Spark.
  </a>
 </p>
 
-### Inicie Sua Jornada com Apache Spark
-Vídeos com Conteúdo de Fundamentos para Criar uma Base Sólida sobre a Engenharia de Dados.
+### Inicie Sua Jornada com Apache Spark {Vídeos}
+Conteúdo de Fundamentos para Criar uma Base Sólida sobre a Engenharia de Dados.
 
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.loom.com/share/5425aecc76754a378ab4438b49826d84)
-
-```shell
-pip install virtualenv
-virtualenv venv
-source venv/bin/activate
-```
-
-```shell
-pip install -r requirements.txt
-
-# python 3.9.15
-python3 --version
-# version 3.2.1
-pyspark --version
-```
+1) Fundamentos de Big Data & Apache Hadoop
+* https://www.loom.com/share/5425aecc76754a378ab4438b49826d84

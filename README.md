@@ -38,8 +38,13 @@ https://www.loom.com/share/5425aecc76754a378ab4438b49826d84
 2) **Instalação do Apache Spark**  
 *aprenda a realizar a instalação do apache spark no macos*  
 
-https://www.loom.com/share/5425aecc76754a378ab4438b49826d84
+https://www.loom.com/share/5f1d05dc293e49919b66d6132da290ff
 
 * [Apache Spark & Linux](https://sparkbyexamples.com/spark/spark-installation-on-linux-ubuntu/)
 * [Apache Spark & Windows](https://phoenixnap.com/kb/install-spark-on-windows-10)
-* 
+
+3) **Aprenda o Spark Shell para Execução de Aplicações no Apache Spark**  
+*aprenda a melhor forma de executar aplicações escritas no apache spark com spark-shell*  
+
+https://www.loom.com/share/9a95dc0ca5b3432984824c5e33e62382
+

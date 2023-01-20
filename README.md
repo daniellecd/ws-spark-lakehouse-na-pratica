@@ -1,9 +1,10 @@
 # Repositório do Workshop | Construindo um Data Lakehouse com Delta e Iceberg na Prática com Apache Spark
-- Delta 
-- Apache Iceberg
-- Apache Nessie
-- Apache Spark
-- Kubernetes
+
+- [Apache Spark](https://spark.apache.org/)
+- [Apache Iceberg](https://iceberg.apache.org/)
+- [Apache Nessie](https://projectnessie.org/)
+- [Delta Lake](https://delta.io/)
+- [Kubernetes](https://kubernetes.io/)
 
 <div align="center">
 
@@ -18,7 +19,7 @@ de Processamento e Entenda como as Engines de Lakehouse Funcionam.
 
 <p align="center">
   <a href="" rel="noopener">
-    <img src="https://github.com/owshq-academy/ws-spark-lakehouse-na-pratica/blob/main/image/roadmap.exalidraw.png" alt="Project Logo">
+    <img src="https://github.com/owshq-academy/ws-spark-lakehouse-na-pratica/blob/32d3324e302a6977f70fc1ba90b86634e8cfd524/images/roadmap.excalidraw.png" alt="Project Logo">
  </a>
 </p>
 

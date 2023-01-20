@@ -30,5 +30,7 @@ Delta e Iceberg na Prática com Apache Spark.
 ### Inicie Sua Jornada com Apache Spark {Vídeos}
 Conteúdo de Fundamentos para Criar uma Base Sólida sobre a Engenharia de Dados.
 
-1) [Fundamentos de Big Data & Apache Hadoop](https://www.loom.com/share/5425aecc76754a378ab4438b49826d84)  
-*aprenda o princípio dos conceitos e tecnologias base de big data & analytics*
+1) **Fundamentos de Big Data & Apache Hadoop**  
+*aprenda o princípio dos conceitos e tecnologias base de big data & analytics*  
+
+https://www.loom.com/share/5425aecc76754a378ab4438b49826d84

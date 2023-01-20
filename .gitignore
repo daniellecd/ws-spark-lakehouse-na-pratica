@@ -1,3 +1,5 @@
 venv
 /venv
 kubernetes/jars/*
+iceberg/jars/*
+iceberg/local/$PWD/*

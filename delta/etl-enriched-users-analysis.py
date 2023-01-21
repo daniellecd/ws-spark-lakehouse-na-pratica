@@ -188,8 +188,10 @@ if __name__ == '__main__':
     # toDF() = dataframe representation
     # of a delta table
     delta_lake_location_subscriptions = "s3a://lakehouse/development/delta/silver/subscriptions"
-    dt_subscriptions = DeltaTable.forPath(spark, delta_lake_location_subscriptions)
-    dt_subscriptions.toDF().show()
+    # dt_subscriptions = DeltaTable.forPath(spark, delta_lake_location_subscriptions)
+    # dt_subscriptions.toDF().show()
+    dt_subscriptions = spark.read.format("delta").load(delta_lake_location_subscriptions)
+    dt_subscriptions.show()
 
     # select columns for analysis
     # the latest version
@@ -228,8 +230,10 @@ if __name__ == '__main__':
 
     # delta table name = plans
     # read latest rows added
-    dt_plans_delta = DeltaTable.forPath(spark, delta_gold_tb_plans_location)
-    dt_plans_delta.toDF().show()
+    # dt_plans_delta = DeltaTable.forPath(spark, delta_gold_tb_plans_location)
+    # dt_plans_delta.toDF().show()
+    dt_plans_delta = spark.read.format("delta").load(delta_gold_tb_plans_location)
+    dt_plans_delta.show()
 
     # describe history
     # find timestamp and version
@@ -238,7 +242,8 @@ if __name__ == '__main__':
 
     # count rows
     # current and previous version
-    dt_subscriptions.toDF().count()
+    # dt_subscriptions.toDF().count()
+    print(dt_subscriptions.count())
 
     # data retention
     # retain commit history for 30 days
@@ -247,7 +252,8 @@ if __name__ == '__main__':
     # configure retention period
     # delta.logRetentionDuration = "interval <interval>":
     # delta.deletedFileRetentionDuration = "interval <interval>":
-    dt_plans_delta.vacuum()
+    # dt_plans_delta.vacuum()
+    print(dt_plans_delta.vacuum())
 
     # stop session
     spark.stop()

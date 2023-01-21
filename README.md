@@ -23,7 +23,7 @@ Delta e Iceberg na Prática com Apache Spark.
 
 <p align="center">
   <a href="" rel="noopener">
-    <img src="https://github.com/owshq-academy/ws-spark-lakehouse-na-pratica/blob/8e7e479dae17cab92808eac968f11de0ac69f3a6/images/roadmap.excalidraw.png" alt="Project Logo">
+    <img src="https://github.com/owshq-academy/ws-spark-lakehouse-na-pratica/blob/36764cd74684216b150ea9b86ac6c2e70dcd4e32/images/roadmap.excalidraw.png" alt="Project Logo">
  </a>
 </p>
 

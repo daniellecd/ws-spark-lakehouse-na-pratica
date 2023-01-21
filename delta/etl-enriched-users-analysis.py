@@ -1,3 +1,8 @@
+"""
+minio console {s3}
+http://159.203.146.203:9090/
+"""
+
 # import libraries
 from delta.tables import *
 from pyspark.sql import SparkSession
@@ -14,9 +19,9 @@ if __name__ == '__main__':
     spark = SparkSession \
         .builder \
         .appName("etl-enriched-users-analysis-py") \
-        .config("spark.hadoop.fs.s3a.endpoint", "http://143.198.244.43") \
-        .config("spark.hadoop.fs.s3a.access.key", "QVhXm9fWeFutyKBe") \
-        .config("spark.hadoop.fs.s3a.secret.key", "1jZrIaYbBtxd9t2HDyuqGk6wIE6nNb3s") \
+        .config("spark.hadoop.fs.s3a.endpoint", "http://45.55.126.192") \
+        .config("spark.hadoop.fs.s3a.access.key", "minio") \
+        .config("spark.hadoop.fs.s3a.secret.key", "minio123") \
         .config("spark.hadoop.fs.s3a.path.style.access", True) \
         .config("spark.hadoop.fs.s3a.fast.upload", True) \
         .config("spark.hadoop.fs.s3a.multipart.size", 104857600) \
@@ -42,8 +47,8 @@ if __name__ == '__main__':
 
     # get_device_file = "s3a://landing/device/*.json"
     # get_subscription_file = "s3a://landing/subscription/*.json"
-    get_device_file = "s3a://landing/device/device_2022_6_10_0_0_31.json"
-    get_subscription_file = "s3a://landing/subscription/subscription_2022_6_10_0_0_28.json"
+    get_device_file = "s3a://landing/device/*.json"
+    get_subscription_file = "s3a://landing/subscription/*.json"
 
     # read device data
     # json file from landing zone
@@ -74,7 +79,7 @@ if __name__ == '__main__':
     # need to read the entire landing zone
     # usual scenario but not the best practice
     write_delta_mode = "overwrite"
-    delta_bronze_zone = "s3a://lakehouse/bronze"
+    delta_bronze_zone = "s3a://lakehouse/development/delta/bronze"
     df_device.write.mode(write_delta_mode).format("delta").save(delta_bronze_zone + "/device/")
     df_subscription.write.mode(write_delta_mode).format("delta").save(delta_bronze_zone + "/subscription/")
 
@@ -174,7 +179,7 @@ if __name__ == '__main__':
     # writing into [silver] zone
     # data lakehouse paradigm
     write_delta_mode = "overwrite"
-    delta_silver_zone = "s3a://lakehouse/silver"
+    delta_silver_zone = "s3a://lakehouse/development/delta/silver"
     inner_join_subscriptions.write.format("delta").mode(write_delta_mode).save(delta_silver_zone + "/subscriptions/")
 
     # read delta table
@@ -182,7 +187,7 @@ if __name__ == '__main__':
     # show info
     # toDF() = dataframe representation
     # of a delta table
-    delta_lake_location_subscriptions = "s3a://lakehouse/silver/subscriptions"
+    delta_lake_location_subscriptions = "s3a://lakehouse/development/delta/silver/subscriptions"
     dt_subscriptions = DeltaTable.forPath(spark, delta_lake_location_subscriptions)
     dt_subscriptions.toDF().show()
 
@@ -205,7 +210,7 @@ if __name__ == '__main__':
     # building [gold zone area]
     # create table in metastore
     # deltatablebuilder api
-    delta_gold_tb_plans_location = "s3a://lakehouse/gold/plans"
+    delta_gold_tb_plans_location = "s3a://lakehouse/development/gold/plans"
     DeltaTable.createIfNotExists(spark) \
         .tableName("plans") \
         .addColumn("plan", StringType()) \
